@@ -5,14 +5,11 @@ import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectContacts } from 'components/redux/selectors';
 
-
 export const ContactForm = () => {
-  
-
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
   const dispatch = useDispatch();
-  const listOfContacts = useSelector(selectContacts)
+  const listOfContacts = useSelector(selectContacts);
 
   const handleChangeName = event => {
     const value = event.target.value;
@@ -26,19 +23,17 @@ export const ContactForm = () => {
 
   const handleFormSubmit = event => {
     event.preventDefault();
-    
-    const form = event.currentTarget;
-      const contactsLists = [...listOfContacts];
+
+    // const form = event.currentTarget;
+    const contactsLists = [...listOfContacts];
     if (contactsLists.findIndex(contact => name === contact.name) !== -1) {
       alert(`${name} is already in contacts.`);
     } else {
       dispatch(addContact({ name: name, phone: number }));
     }
-
-    form.reset();
-    
+    setName('');
+    setNumber('');
   };
-
 
   const loginNameId = nanoid();
   const loginNumberId = nanoid();
@@ -78,6 +73,4 @@ export const ContactForm = () => {
       </form>
     </div>
   );
-
-
 };
