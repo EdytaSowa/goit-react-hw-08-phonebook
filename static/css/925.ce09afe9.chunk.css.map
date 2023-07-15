@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/925.ce09afe9.chunk.css","mappings":"AAAA,sBACI,YAAa,CACb,qBAAsB,CACtB,gBACJ,CAMA,yDACI,WACJ","sources":["pages/Register.module.css"],"sourcesContent":[".form {\n    display: flex;\n    flex-direction: column;\n    margin-left: 30px;\n}\n\n.form input {\n    width: 150px\n}\n\n.form button {\n    width:150px\n}"],"names":[],"sourceRoot":""}
