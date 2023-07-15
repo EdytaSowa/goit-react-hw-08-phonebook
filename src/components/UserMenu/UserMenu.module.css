@@ -2,9 +2,19 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    
   }
   
-  .username {
-    font-weight: 700;
+ .name {
+  font-weight: 600;
+  color: rgb(238, 135, 17);
+ }
+
+  .wrapper button {
+    color: rgb(238, 135, 17);
+    background-color: black;
+   
+    border: 2px solid #0c0b0b;
+    border-radius: 4px;
+    padding:5px;
   }
-  
