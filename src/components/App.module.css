@@ -1,12 +1,10 @@
 .app {
-    /* background-color: rgb(204, 204, 197);
-     */
-     background: linear-gradient(132deg,#5f5555 0%, #d26208 80%);
+   
     margin: 0 auto;
     width: 50%;
     justify-content: center;
     align-items: center;
-    margin-block: 40px;
+    /* margin-block: 40px; */
     box-shadow: 0px 0px 30px 15px rgba(71,61,61,0.75);
     border-radius: 40px;
     /* height: 100vh; */

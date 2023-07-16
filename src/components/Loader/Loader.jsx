@@ -8,7 +8,7 @@ export const Loader = () => {
    <Bars
       height="300"
       width="300"
-      color="#000000"
+      color="rgb(22, 37, 102)"
       ariaLabel="bars-loading"
       wrapperStyle={{}}
       wrapperClass=""

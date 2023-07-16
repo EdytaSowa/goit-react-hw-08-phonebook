@@ -4,6 +4,8 @@ import { selectContacts, selectFilter } from 'redux/contacts/selectors';
 
 import css from './ContactList.module.css';
 import { deleteContact } from 'redux/contacts/operations';
+import PhoneIphoneTwoToneIcon from '@mui/icons-material/PhoneIphoneTwoTone';
+import Button from '@mui/material/Button';
 
 export const ContactList = () => {
   const contacts = useSelector(selectContacts);
@@ -20,16 +22,25 @@ export const ContactList = () => {
     <ul className={css.list}>
       {filteredContacts.map(contact => (
         <li className={css.listItem} key={contact.id}>
+          <PhoneIphoneTwoToneIcon sx={{fontSize: 20}}/>
           {' '}
-          {contact.name} {contact.phone}
-          <button
+          <span className={css.span}> {contact.name} {contact.number}</span>
+
+          <Button variant="contained"  className={css.button}
+            type="button"
+            onClick={() => handleDelete(contact.id)}  sx={{fontSize: 12}}>
+          Delete
+      </Button>
+
+
+          {/* <button
             className={css.button}
             type="button"
             onClick={() => handleDelete(contact.id)}
           >
             {' '}
             Delete{' '}
-          </button>
+          </button> */}
         </li>
       ))}
     </ul>

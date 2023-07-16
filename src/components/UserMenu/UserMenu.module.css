@@ -1,20 +1,15 @@
 .wrapper {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    
-  }
-  
- .name {
-  font-weight: 600;
-  color: rgb(238, 135, 17);
- }
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 
-  .wrapper button {
-    color: rgb(238, 135, 17);
-    background-color: black;
-   
-    border: 2px solid #0c0b0b;
-    border-radius: 4px;
-    padding:5px;
-  }
+.name {
+  font-weight: 600;
+  /* color: rgb(17, 76, 238); */
+}
+
+.wrapper button {
+  color: rgb(185, 180, 174);
+  background-color: rgb(22, 37, 102);
+}
